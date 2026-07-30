@@ -1,67 +1,101 @@
 <div align="center">
 
-<!-- ===================== HERO BANNER ===================== -->
-<svg width="100%" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+<!-- ===================== AVATAR ===================== -->
+<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00f0ff" stroke-opacity="0.05" stroke-width="0.5"/>
-    </pattern>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff9ec4"/>
+      <stop offset="100%" stop-color="#c9b6e4"/>
+    </linearGradient>
+    <clipPath id="c">
+      <circle cx="90" cy="90" r="62"/>
+    </clipPath>
   </defs>
 
-  <rect width="800" height="200" fill="#0a0a0c"/>
-  <rect width="800" height="200" fill="url(#grid)"/>
-  <rect x="20" y="18" width="760" height="164" fill="none" stroke="#00f0ff" stroke-opacity="0.15" stroke-width="1"/>
-  <rect x="24" y="22" width="752" height="156" fill="none" stroke="#00f0ff" stroke-opacity="0.05" stroke-width="0.5"/>
+  <!-- decorative outer rings -->
+  <circle cx="90" cy="90" r="82" fill="none" stroke="url(#ring)" stroke-width="2" stroke-opacity="0.35"/>
+  <circle cx="90" cy="90" r="74" fill="none" stroke="#ffd6e8" stroke-width="1" stroke-dasharray="2 6"/>
+  <!-- avatar -->
+  <image href="https://github.com/cecilia4412.png" x="28" y="28" width="124" height="124" clip-path="url(#c)"/>
+  <circle cx="90" cy="90" r="62" fill="none" stroke="url(#ring)" stroke-width="3"/>
 
-  <!-- corner ticks -->
-  <path d="M20 38 L40 38 M40 18 L40 38" stroke="#00f0ff" stroke-opacity="0.4" stroke-width="1.5" fill="none"/>
-  <path d="M780 38 L760 38 M760 18 L760 38" stroke="#00f0ff" stroke-opacity="0.4" stroke-width="1.5" fill="none"/>
-  <path d="M20 162 L40 162 M40 182 L40 162" stroke="#00f0ff" stroke-opacity="0.4" stroke-width="1.5" fill="none"/>
-  <path d="M780 162 L760 162 M760 182 L760 162" stroke="#00f0ff" stroke-opacity="0.4" stroke-width="1.5" fill="none"/>
+  <!-- floating mini hearts -->
+  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" transform="translate(150,30) scale(0.5)" fill="#ff9ec4" opacity="0.7"/>
+  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" transform="translate(20,140) scale(0.45)" fill="#c9b6e4" opacity="0.7"/>
+</svg>
 
-  <text x="400" y="86" text-anchor="middle" font-family="'SF Mono','Fira Code',monospace" font-size="40" font-weight="700" fill="#00f0ff" letter-spacing="6">cecilia4412</text>
-  <text x="400" y="120" text-anchor="middle" font-family="'SF Mono','Fira Code',monospace" font-size="13" fill="#6b7280" letter-spacing="2">PYTHON BACKEND · REACT FRONTEND · AI ENGINEER</text>
-  <text x="400" y="150" text-anchor="middle" font-family="'SF Mono','Fira Code',monospace" font-size="12" fill="#4b5563">Ciallo ~ ( ∠ ω &lt; ) ★</text>
+<br/>
+
+<!-- ===================== HERO BANNER ===================== -->
+<svg width="100%" height="230" viewBox="0 0 800 230" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0f5"/>
+      <stop offset="45%" stop-color="#ffe3ef"/>
+      <stop offset="100%" stop-color="#efe6fb"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- soft rounded frame -->
+  <rect x="12" y="12" width="776" height="206" rx="26" fill="url(#bg)" stroke="#ffb3d1" stroke-width="1.5"/>
+  <rect x="12" y="12" width="776" height="206" rx="26" fill="url(#glow)"/>
+  <rect x="20" y="20" width="760" height="190" rx="20" fill="none" stroke="#ffd6e8" stroke-width="1"/>
+
+  <!-- floating hearts (SVG drawn, no emoji) -->
+  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" transform="translate(70,40) scale(0.9)" fill="#ff9ec4" opacity="0.55"/>
+  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" transform="translate(700,150) scale(1.1)" fill="#c9b6e4" opacity="0.5"/>
+  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" transform="translate(660,55) scale(0.55)" fill="#ffc4dd" opacity="0.7"/>
+  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" transform="translate(95,150) scale(0.6)" fill="#d9c2f0" opacity="0.6"/>
+
+  <!-- little sparkles -->
+  <path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z" transform="translate(150,170) scale(0.7)" fill="#f4c9d8" opacity="0.8"/>
+  <path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77 5.82 21l1.18-6.88-5-4.87 7.1-1.01L12 2z" transform="translate(620,180) scale(0.6)" fill="#cbb8ea" opacity="0.8"/>
+
+  <!-- name plate -->
+  <text x="400" y="112" text-anchor="middle" font-family="Georgia,'Songti SC','STSong',serif" font-size="46" font-weight="700" fill="#c4597e" letter-spacing="3">cecilia4412</text>
+
+  <!-- signature + tagline -->
+  <text x="400" y="150" text-anchor="middle" font-family="'Hiragino Sans','PingFang SC',sans-serif" font-size="16" fill="#b8729c">Ciallo ~ ( ∠ ω &lt; ) ★</text>
+  <text x="400" y="178" text-anchor="middle" font-family="Georgia,'Songti SC',serif" font-size="13" fill="#d99bbe" letter-spacing="2">a little story, written in code &amp; dreams</text>
 </svg>
 
 </div>
 
-<!-- ===================== TYPING ===================== -->
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&pause=1200&center=true&vCenter=true&width=600&color=00F0FF&lines=%3E+%E6%8A%80%E6%9C%AF%E4%BA%8C%E6%AC%A1%E5%85%83%E5%AE%85+%C2%B7+Tech+Otaku;%3E+Python%E5%90%8E%E7%AB%AF+%2F+React%E5%89%8D%E7%AB%AF+%2F+%E5%85%A8%E6%A0%88;%3E+ASR+%2F+TTS+%2F+LLM+Agent+%E6%8A%98%E8%85%BE%E4%B8%AD;%3E+%E6%8A%8A%E4%BB%A3%E7%A0%81%E5%92%8C%E4%BA%8C%E6%AC%A1%E5%85%83%E6%8F%89%E5%9C%A8%E4%B8%80%E8%B5%B7~" alt="Typing SVG" />
-</p>
-
 <!-- ===================== SOCIAL BADGES ===================== -->
 <p align="center">
-  <a href="https://homepage.ciallo.pet/"><img src="https://img.shields.io/badge/HOMEPAGE-homepage.ciallo.pet-00f0ff?style=for-the-badge&logo=homeadvisor&logoColor=white&labelColor=0a0a0c" alt="Homepage" /></a>
-  <a href="https://github.com/cecilia4412"><img src="https://img.shields.io/badge/GITHUB-cecilia4412-00f0ff?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0a0c" alt="GitHub" /></a>
-  <a href="https://space.bilibili.com/1920131239"><img src="https://img.shields.io/badge/BILIBILI-@cecilia4412-00f0ff?style=for-the-badge&logo=bilibili&logoColor=white&labelColor=0a0a0c" alt="Bilibili" /></a>
-  <a href="https://www.modelscope.cn/profile/cecilia4412"><img src="https://img.shields.io/badge/MODELSCOPE-cecilia4412-00f0ff?style=for-the-badge&logo=huggingface&logoColor=white&labelColor=0a0a0c" alt="ModelScope" /></a>
-  <a href="mailto:cecilia4412@qq.com"><img src="https://img.shields.io/badge/EMAIL-cecilia4412@qq.com-00f0ff?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0a0c" alt="Email" /></a>
+  <a href="https://homepage.ciallo.pet/"><img src="https://img.shields.io/badge/HOMEPAGE-homepage.ciallo.pet-ff9ec4?style=for-the-badge&logo=homeadvisor&logoColor=white&labelColor=ffe3ef" alt="Homepage" /></a>
+  <a href="https://github.com/cecilia4412"><img src="https://img.shields.io/badge/GITHUB-cecilia4412-ff9ec4?style=for-the-badge&logo=github&logoColor=white&labelColor=ffe3ef" alt="GitHub" /></a>
+  <a href="https://space.bilibili.com/1920131239"><img src="https://img.shields.io/badge/BILIBILI-@cecilia4412-ff9ec4?style=for-the-badge&logo=bilibili&logoColor=white&labelColor=ffe3ef" alt="Bilibili" /></a>
+  <a href="https://www.modelscope.cn/profile/cecilia4412"><img src="https://img.shields.io/badge/MODELSCOPE-cecilia4412-ff9ec4?style=for-the-badge&logo=huggingface&logoColor=white&labelColor=ffe3ef" alt="ModelScope" /></a>
+  <a href="mailto:cecilia4412@qq.com"><img src="https://img.shields.io/badge/EMAIL-cecilia4412@qq.com-ff9ec4?style=for-the-badge&logo=gmail&logoColor=white&labelColor=ffe3ef" alt="Email" /></a>
 </p>
 
 <!-- ===================== COUNTERS ===================== -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=cecilia4412&style=flat-square&color=00f0ff&label=VISITORS" alt="Profile Views" />
-  <img src="https://img.shields.io/github/followers/cecilia4412?style=flat-square&color=00f0ff&label=FOLLOWERS" alt="Followers" />
+  <img src="https://komarev.com/ghpvc/?username=cecilia4412&style=flat-square&color=ff9ec4&label=VISITORS" alt="Profile Views" />
+  <img src="https://img.shields.io/github/followers/cecilia4412?style=flat-square&color=ff9ec4&label=FOLLOWERS" alt="Followers" />
 </p>
 
 <br/>
 
 <!-- ===================== ABOUT ===================== -->
-<h3 style="font-family:'SF Mono','Fira Code',monospace;color:#00f0ff;font-size:15px;letter-spacing:3px;text-align:center;">// ABOUT_ME</h3>
+<h3 style="font-family:Georgia,'Songti SC',serif;color:#c4597e;font-size:17px;text-align:center;letter-spacing:2px;">&#10084; About Me</h3>
 
 <table align="center">
   <tr>
-    <td style="padding:28px 44px;background:#0d0d12;border:1px solid #00f0ff22;" align="left">
-      <p style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#c9d1d9;font-size:14px;line-height:1.8;margin:0;">
-        I am <strong style="color:#00f0ff;">cecilia</strong>, a developer who blends code with the otaku universe.
+    <td style="padding:26px 44px;background:#fff5f8;border:1px solid #ffd6e8;border-radius:16px;" align="left">
+      <p style="font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;color:#7a5a6b;font-size:14px;line-height:1.9;margin:0;">
+        I am <strong style="color:#c4597e;">cecilia</strong>, a developer who quietly weaves code together with a touch of the anime world.
       </p>
-      <p style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#8b949e;font-size:14px;line-height:1.8;margin:12px 0 0 0;">
-        I write backend services in the terminal, fine-tune models, wrestle with deployments, and build polished products with React. I care less about "knowing the tools" and more about understanding how things work &mdash; from speech models to MCP gateways, from Docker orchestration to personal homepages, I prefer to build it myself.
+      <p style="font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;color:#9a7c8c;font-size:14px;line-height:1.9;margin:12px 0 0 0;">
+        In the terminal I write backend services, tune models, and tinker with deployments; with React I shape ideas into things that run and feel alive. I care less about simply "using tools" and more about understanding how everything works &mdash; from speech models to MCP gateways, from Docker to a little personal homepage, I would rather build it with my own hands.
       </p>
       <p style="margin:18px 0 0 0;">
-        <span style="display:inline-block;background:#00f0ff12;border:1px solid #00f0ff33;padding:6px 16px;font-family:'SF Mono','Fira Code',monospace;font-size:12px;color:#00f0ff;">STATUS: OPEN_TO_WORK &middot; Python / Frontend / Fullstack</span>
+        <span style="display:inline-block;background:#ffe3ef;border:1px solid #ffb3d1;padding:6px 16px;border-radius:20px;font-family:Georgia,serif;font-size:12px;color:#c4597e;">STATUS: OPEN_TO_WORK &middot; Python / Frontend / Fullstack</span>
       </p>
     </td>
   </tr>
@@ -70,7 +104,7 @@
 <br/>
 
 <!-- ===================== TECH STACK ===================== -->
-<h3 style="font-family:'SF Mono','Fira Code',monospace;color:#00f0ff;font-size:15px;letter-spacing:3px;text-align:center;">// TECH_STACK</h3>
+<h3 style="font-family:Georgia,'Songti SC',serif;color:#c4597e;font-size:17px;text-align:center;letter-spacing:2px;">&#10084; Tech Stack</h3>
 
 <div align="center">
 
@@ -84,47 +118,97 @@
 
 <br/>
 
-<!-- ===================== STATS ===================== -->
-<h3 style="font-family:'SF Mono','Fira Code',monospace;color:#00f0ff;font-size:15px;letter-spacing:3px;text-align:center;">// STATISTICS</h3>
+<!-- ===================== STATISTICS (self-contained SVG, no external host) ===================== -->
+<h3 style="font-family:Georgia,'Songti SC',serif;color:#c4597e;font-size:17px;text-align:center;letter-spacing:2px;">&#10084; Statistics</h3>
 
-<p align="center">
-  <a href="https://github.com/cecilia4412">
-    <img height="155em" src="https://github-readme-stats.vercel.app/api?username=cecilia4412&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D0D12&title_color=00f0ff&icon_color=00f0ff&text_color=c9d1d9&border_color=00f0ff22&custom_title=GITHUB_STATS" />
-    <img height="155em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cecilia4412&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D0D12&title_color=00f0ff&text_color=c9d1d9&border_color=00f0ff22&custom_title=TOP_LANGUAGES" />
-  </a>
-</p>
+<div align="center">
+<svg width="100%" height="380" viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="statbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0f5"/>
+      <stop offset="50%" stop-color="#ffe3ef"/>
+      <stop offset="100%" stop-color="#efe6fb"/>
+    </linearGradient>
+  </defs>
 
-<p align="center">
-  <img height="155em" src="https://github-readme-streak-stats.herokuapp.com/?user=cecilia4412&theme=tokyonight&hide_border=true&background=0D0D12&stroke=00f0ff33&ring=00f0ff&fire=00f0ff&currStreakLabel=00f0ff&sideLabels=c9d1d9&dates=6b7280&sideNums=c9d1d9&currStreakNum=c9d1d9" alt="GitHub Streak" />
-</p>
+  <!-- card -->
+  <rect x="12" y="12" width="776" height="356" rx="26" fill="url(#statbg)" stroke="#ffb3d1" stroke-width="1.5"/>
+  <rect x="20" y="20" width="760" height="340" rx="20" fill="none" stroke="#ffd6e8" stroke-width="1"/>
+
+  <!-- corner hearts -->
+  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" transform="translate(45,40) scale(0.7)" fill="#ff9ec4" opacity="0.45"/>
+  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" transform="translate(735,320) scale(0.7)" fill="#c9b6e4" opacity="0.45"/>
+
+  <!-- title -->
+  <text x="400" y="62" text-anchor="middle" font-family="Georgia,'Songti SC',serif" font-size="22" font-weight="700" fill="#c4597e">&#10084; GitHub Stats</text>
+  <text x="400" y="86" text-anchor="middle" font-family="Georgia,serif" font-size="12" fill="#d99bbe" letter-spacing="2">real numbers, refreshed with love</text>
+
+  <!-- four metric tiles -->
+  <!-- tile 1 -->
+  <rect x="53" y="108" width="160" height="95" rx="14" fill="#ffffff" fill-opacity="0.72" stroke="#ffd6e8" stroke-width="1"/>
+  <text x="133" y="162" text-anchor="middle" font-family="Georgia,serif" font-size="34" font-weight="700" fill="#c4597e">11</text>
+  <text x="133" y="186" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="12" fill="#9a7c8c">Repositories</text>
+  <!-- tile 2 -->
+  <rect x="231" y="108" width="160" height="95" rx="14" fill="#ffffff" fill-opacity="0.72" stroke="#ffd6e8" stroke-width="1"/>
+  <text x="311" y="162" text-anchor="middle" font-family="Georgia,serif" font-size="34" font-weight="700" fill="#c4597e">2</text>
+  <text x="311" y="186" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="12" fill="#9a7c8c">Followers</text>
+  <!-- tile 3 -->
+  <rect x="409" y="108" width="160" height="95" rx="14" fill="#ffffff" fill-opacity="0.72" stroke="#ffd6e8" stroke-width="1"/>
+  <text x="489" y="162" text-anchor="middle" font-family="Georgia,serif" font-size="34" font-weight="700" fill="#c4597e">0</text>
+  <text x="489" y="186" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="12" fill="#9a7c8c">Stars</text>
+  <!-- tile 4 -->
+  <rect x="587" y="108" width="160" height="95" rx="14" fill="#ffffff" fill-opacity="0.72" stroke="#ffd6e8" stroke-width="1"/>
+  <text x="667" y="162" text-anchor="middle" font-family="Georgia,serif" font-size="34" font-weight="700" fill="#c4597e">3</text>
+  <text x="667" y="186" text-anchor="middle" font-family="'PingFang SC',sans-serif" font-size="12" fill="#9a7c8c">Following</text>
+
+  <!-- top languages -->
+  <text x="400" y="240" text-anchor="middle" font-family="Georgia,'Songti SC',serif" font-size="14" fill="#b8729c" letter-spacing="1">Top Languages</text>
+
+  <!-- Python bar -->
+  <text x="232" y="272" text-anchor="end" font-family="'PingFang SC',sans-serif" font-size="12" fill="#b8729c">Python</text>
+  <rect x="244" y="261" width="404" height="14" rx="7" fill="#ffe3ef"/>
+  <rect x="244" y="261" width="266" height="14" rx="7" fill="#ff9ec4"/>
+  <!-- HTML bar -->
+  <text x="232" y="298" text-anchor="end" font-family="'PingFang SC',sans-serif" font-size="12" fill="#b8729c">HTML</text>
+  <rect x="244" y="287" width="404" height="14" rx="7" fill="#ffe3ef"/>
+  <rect x="244" y="287" width="121" height="14" rx="7" fill="#c9b6e4"/>
+  <!-- CSS bar -->
+  <text x="232" y="324" text-anchor="end" font-family="'PingFang SC',sans-serif" font-size="12" fill="#b8729c">CSS</text>
+  <rect x="244" y="313" width="404" height="14" rx="7" fill="#ffe3ef"/>
+  <rect x="244" y="313" width="52" height="14" rx="7" fill="#ffc4dd"/>
+
+  <!-- member since -->
+  <text x="400" y="356" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#bba3b0" letter-spacing="1">GitHub member since July 2022</text>
+</svg>
+</div>
 
 <br/>
 
 <!-- ===================== CONNECT ===================== -->
-<h3 style="font-family:'SF Mono','Fira Code',monospace;color:#00f0ff;font-size:15px;letter-spacing:3px;text-align:center;">// CONNECT</h3>
+<h3 style="font-family:Georgia,'Songti SC',serif;color:#c4597e;font-size:17px;text-align:center;letter-spacing:2px;">&#10084; Connect</h3>
 
 <table align="center">
   <tr>
-    <td style="padding:24px 44px;background:#0d0d12;border:1px solid #00f0ff22;" align="left">
-      <p style="font-family:'SF Mono','Fira Code',monospace;font-size:13px;margin:0 0 12px 0;">
-        <span style="color:#6b7280;display:inline-block;width:64px;">[site]</span>
-        <a href="https://homepage.ciallo.pet/" style="color:#00f0ff;text-decoration:none;">homepage.ciallo.pet</a>
-        <span style="color:#4b5563;">&nbsp;// personal site, food diary, desktop pet</span>
+    <td style="padding:24px 44px;background:#fff5f8;border:1px solid #ffd6e8;border-radius:16px;" align="left">
+      <p style="font-family:'Hiragino Sans','PingFang SC',sans-serif;font-size:13px;margin:0 0 12px 0;">
+        <span style="color:#c9b6e4;">&#10084;</span>
+        <a href="https://homepage.ciallo.pet/" style="color:#c4597e;text-decoration:none;font-weight:600;">homepage.ciallo.pet</a>
+        <span style="color:#b89aa8;">&nbsp;&mdash; personal site, food diary, a desktop pet named Phoebe</span>
       </p>
-      <p style="font-family:'SF Mono','Fira Code',monospace;font-size:13px;margin:0 0 12px 0;">
-        <span style="color:#6b7280;display:inline-block;width:64px;">[bili]</span>
-        <a href="https://space.bilibili.com/1920131239" style="color:#00f0ff;text-decoration:none;">@cecilia4412</a>
-        <span style="color:#4b5563;">&nbsp;// video &amp; streaming</span>
+      <p style="font-family:'Hiragino Sans','PingFang SC',sans-serif;font-size:13px;margin:0 0 12px 0;">
+        <span style="color:#c9b6e4;">&#10084;</span>
+        <a href="https://space.bilibili.com/1920131239" style="color:#c4597e;text-decoration:none;font-weight:600;">@cecilia4412</a>
+        <span style="color:#b89aa8;">&nbsp;&mdash; videos &amp; live streaming</span>
       </p>
-      <p style="font-family:'SF Mono','Fira Code',monospace;font-size:13px;margin:0 0 12px 0;">
-        <span style="color:#6b7280;display:inline-block;width:64px;">[game]</span>
-        <a href="https://steamcommunity.com/profiles/76561198726425168" style="color:#00f0ff;text-decoration:none;">Steam Profile</a>
-        <span style="color:#4b5563;">&nbsp;// gaming library</span>
+      <p style="font-family:'Hiragino Sans','PingFang SC',sans-serif;font-size:13px;margin:0 0 12px 0;">
+        <span style="color:#c9b6e4;">&#10084;</span>
+        <a href="https://steamcommunity.com/profiles/76561198726425168" style="color:#c4597e;text-decoration:none;font-weight:600;">Steam Profile</a>
+        <span style="color:#b89aa8;">&nbsp;&mdash; my little game library</span>
       </p>
-      <p style="font-family:'SF Mono','Fira Code',monospace;font-size:13px;margin:0;">
-        <span style="color:#6b7280;display:inline-block;width:64px;">[model]</span>
-        <a href="https://www.modelscope.cn/profile/cecilia4412" style="color:#00f0ff;text-decoration:none;">ModelScope</a>
-        <span style="color:#4b5563;">&nbsp;// AI models &amp; datasets</span>
+      <p style="font-family:'Hiragino Sans','PingFang SC',sans-serif;font-size:13px;margin:0;">
+        <span style="color:#c9b6e4;">&#10084;</span>
+        <a href="https://www.modelscope.cn/profile/cecilia4412" style="color:#c4597e;text-decoration:none;font-weight:600;">ModelScope</a>
+        <span style="color:#b89aa8;">&nbsp;&mdash; AI models &amp; datasets</span>
       </p>
     </td>
   </tr>
@@ -135,11 +219,16 @@
 <!-- ===================== FOOTER ===================== -->
 <div align="center">
 <svg width="600" height="90" viewBox="0 0 600 90" xmlns="http://www.w3.org/2000/svg">
-  <line x1="220" y1="24" x2="380" y2="24" stroke="#00f0ff" stroke-opacity="0.2" stroke-width="0.5"/>
-  <text x="300" y="50" text-anchor="middle" font-family="'SF Mono','Fira Code',monospace" font-size="11" fill="#4b5563" letter-spacing="4">CIALLO ~ ( ∠ ω &lt; ) ★</text>
-  <rect x="240" y="62" width="120" height="1" fill="#00f0ff" fill-opacity="0.08"/>
-  <circle cx="260" cy="62.5" r="1.5" fill="#00f0ff" fill-opacity="0.3"/>
-  <circle cx="300" cy="62.5" r="1.5" fill="#00f0ff" fill-opacity="0.15"/>
-  <circle cx="340" cy="62.5" r="1.5" fill="#00f0ff" fill-opacity="0.3"/>
+  <defs>
+    <linearGradient id="footbg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff0f5" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffd6e8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#fff0f5" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="60" y="44" width="480" height="2" fill="url(#footbg)"/>
+  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" transform="translate(285,18) scale(0.5)" fill="#ff9ec4" opacity="0.8"/>
+  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" transform="translate(305,18) scale(0.5)" fill="#c9b6e4" opacity="0.8"/>
+  <text x="300" y="68" text-anchor="middle" font-family="Georgia,'Songti SC',serif" font-size="12" fill="#d99bbe" letter-spacing="3">Ciallo ~ ( ∠ ω &lt; ) ★</text>
 </svg>
 </div>
